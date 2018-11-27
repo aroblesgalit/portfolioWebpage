@@ -81,7 +81,7 @@ h2 {
     text-align: center;
 }
 
-.content-box {
+.about-content {
     width: 80%;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -121,11 +121,13 @@ h2 {
     margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    border: 1px solid transparent;
 }
 
 .project-tile:hover {
     box-shadow: 0px 3px 8px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
+    border: 1px solid #b7d437;
 }
 
 #projects h2 {
@@ -145,8 +147,9 @@ h2 {
 }
 
 .proj-title {
-    padding: 0 10px;
+    padding: 20px 10px 10px 10px;
     color: #4e4946;
+    font-size: 20px;
 }
 
 .proj-tags {
@@ -157,4 +160,88 @@ h2 {
 
 #projects a {
     text-decoration: none;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+#contact h2 {
+    margin: 80px 0;
+}
+
+.contact-content {
+    width: 85%;
+    display: flex;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo, .contactForm {
+    width: 50%;
+}
+
+form label {
+    font-weight: 100;
+}
+
+.send {
+    background-color: #b7d437;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    float: right;
+}
+
+.send:hover {
+    background-color: #92a525;
+    color: #fff;
+}
+
+#resume {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume h2 {
+    margin-bottom: 20px;
+}
+
+#resume a {
+    color: #4e4946;
+}
+
+#resume a:link, #resume a:visited {
+    text-decoration: none;
+    color: #4e4946;
+}
+
+footer {
+    background-color: #2e2d35;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 20px;
+    color: #fff;
+}
+
+footer a:link, footer a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover, #resume a:hover {
+    color: #b7d437;
 }
